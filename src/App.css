@@ -17,7 +17,17 @@ body {
 
 h1 {
   font-family: "Bigelow Rules";
+  color: #0ccac4;
   font-size: 72px;
+}
+
+p.no-search-results {
+  color: white;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+p.no-search-results strong {
+  font-family: "Bigelow Rules";
   color: #0ccac4;
 }
 

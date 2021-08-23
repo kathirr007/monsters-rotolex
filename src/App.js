@@ -40,6 +40,14 @@ class App extends Component {
           placeholder="search monsters"
           handleChange={this.handleSearchChange}
         />
+        {filteredMonsters.length === 0 ? (
+          <p className="no-search-results">
+            There is no monster found with the name of
+            <strong> "{`${this.state.searchField}`}"</strong>
+          </p>
+        ) : (
+          ""
+        )}
         <CardList monsters={filteredMonsters} />
       </main>
     );
